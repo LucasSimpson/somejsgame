@@ -27,10 +27,6 @@ export class ClockService {
     }, 1000);
   }
 
-  public getStream(): Subject<number> {
-    return this.stream;
-  }
-
   public register(ticker: Tickable) {
 
     // hack to get this keyword work
